@@ -10,28 +10,34 @@
 
     <title>Hello, world!</title>
     <style>
-
+      #a{
+        border: 1px solid ;
+        border-color: blue; 
+        margin-left: 26%;
+        width: 50%;
+        height: 60%;
+        
+      
+        }
     </style>
   </head>
-  <body style="text-align: center;">
-      <h2>Welcom To Psc</h2><br><br>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div >
-                <form action="page" method="post">
+  <body style="text-align: center;margin: 0;background-color: #BBDEFB;">
+      <h2>Welcom To Psc</h2><br>
+      <br>
+    <div class="container" >
+                <div id="a">
+                <form action="page" method="post" style="margin-left: 28%;">
                     {% csrf_token%}
-                    <input type="text" placeholder="Enter First Name" name="name1" class="form-control" aria-placeholder="center" style="width:50%" ; required>
-                    <input type="text" placeholder="Enter Last Name" name="name2" class="form-control" id="a" style="width:50%" ; required>
-                    <input type="email" placeholder="Email Address" name="email" class="form-control" id="a" style="width:50%" ; required>
-                    <input type="number" placeholder="Phone Number" name="number" class="form-control" id="a" style="width:50%" ; required>
-                    <input type="password" placeholder="Enter Password" name="password" class="form-control" id="a" style="width:50%" ; required>
-                    <button type="submit" class="btn btn-primary" >Submit</button>
+                    <br>
+                    <input type="text" placeholder="Enter First Name" name="name1" class="form-control"  style="width:50%";  required><br>
+                    <input type="text" placeholder="Enter Last Name" name="name2" class="form-control"  style="width:50%" ; required><br>
+                    <input type="email" placeholder="Email Address" name="email" class="form-control"  style="width:50%" ; required><br>
+                    <input type="number" placeholder="Phone Number" name="number" class="form-control"  style="width:50%" ; required><br>
+                    <input type="password" placeholder="Enter Password" name="password" class="form-control" style="width:50%" ; required><br>
+                    <button type="submit" class="btn btn-primary" >Submit</button><br>
 
                 </form>
                 </div>
-            </div>
-        </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
